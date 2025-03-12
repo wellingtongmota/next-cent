@@ -52,7 +52,7 @@
   --popover: 0 0% 100%;
   --popover-foreground: 240 10% 3.9%;
   --primary: oklch(67.3% 0.1633 144.01);
-  --primary-foreground: 355.7 100% 97.3%;
+  --primary-foreground: oklch(100% 0 0);
   --secondary: oklch(30.87% 0.0195 229.78);
   --secondary-foreground: 240 5.9% 10%;
   --info: oklch(65.37% 0.1709 249.62);
@@ -65,7 +65,7 @@
   --border: 240 5.9% 90%;
   --input: 240 5.9% 90%;
   --ring: oklch(67.3% 0.1633 144.01);
-  --radius: 0rem;
+  --radius: 0.3rem;
   --chart-1: 12 76% 61%;
   --chart-2: 173 58% 39%;
   --chart-3: 197 37% 24%;
@@ -111,7 +111,7 @@
 
 @layer components {
   .wrapper {
-    @apply w-full max-w-screen-2xl px-4 2xl:px-0;
+    @apply mx-auto w-full max-w-screen-2xl px-4;
   }
 
   .headline-1 {
