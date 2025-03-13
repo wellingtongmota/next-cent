@@ -14,7 +14,7 @@ export function Navbar() {
         <h1 className="headline-4 sm:headline-3 text-secondary">Nextcent</h1>
       </div>
       <nav className="hidden flex-1 justify-center md:flex">
-        <ul className="flex gap-8 xl:gap-12">
+        <ul className="flex gap-4 xl:gap-12">
           {navLinks.map((link, index) => (
             <li key={index}>
               <Link href="/#" className="hover:text-primary">

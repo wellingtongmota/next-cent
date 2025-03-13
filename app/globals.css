@@ -136,3 +136,18 @@
     @apply inline-flex cursor-pointer items-center justify-center gap-2 px-4 py-2;
   }
 }
+
+@theme {
+  --animate-fade: fade 0.7s ease-out forwards;
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

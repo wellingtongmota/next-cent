@@ -10,17 +10,17 @@ type TSession = {
 
 const sessions: TSession[] = [
   {
-    img: "/updates/update_1.jpg",
+    img: "/updates/1.jpg",
     text: "Creating Streamlined Safeguarding Processes with OneRen",
     url: "/#"
   },
   {
-    img: "/updates/update_2.jpg",
+    img: "/updates/2.jpg",
     text: "What are your safeguarding responsibilities and how can you manage them?",
     url: "/#"
   },
   {
-    img: "/updates/update_3.jpg",
+    img: "/updates/3.jpg",
     text: "Revamping the Membership Model with Triathlon Australia",
     url: "/#"
   }
@@ -37,7 +37,7 @@ export function Updates() {
         industry. Lorem Ipsum has been the industry's standard dummy.`}
       </p>
 
-      <div className="grid w-full place-items-center items-center gap-4 pt-8 sm:grid-cols-3">
+      <div className="animate-fade grid w-full place-items-center items-center gap-4 pt-8 opacity-0 sm:grid-cols-3">
         {sessions.map(({ img, text, url }, index) => (
           <div key={index} className="relative flex w-full max-w-80 flex-col">
             {/* eslint-disable-next-line @next/next/no-img-element */}
