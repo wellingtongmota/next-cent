@@ -23,7 +23,7 @@ export function Footer() {
   return (
     <footer className="wrapper bg-secondary flex flex-col items-center px-4 py-4 text-white sm:px-9 sm:py-6 lg:px-18 lg:py-12 2xl:px-36 2xl:py-24">
       <div className="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-6">
-        <div className="col-span-2 grid gap-8">
+        <div className="col-span-2 grid gap-4 sm:gap-6">
           <div className="flex flex-1 items-center gap-2">
             <LogoIcon />
             <h1 className="headline-4">Nextcent</h1>
@@ -49,7 +49,7 @@ export function Footer() {
         </div>
         <div>
           <h4 className="headline-4">Company</h4>
-          <ul className="space-y-2 pt-6 sm:space-y-3">
+          <ul className="mt-4 space-y-2 sm:mt-6 sm:space-y-3">
             {companyLinks.map((link, index) => (
               <li key={index}>
                 <Link
@@ -64,7 +64,7 @@ export function Footer() {
         </div>
         <div>
           <h4 className="headline-4">Support</h4>
-          <ul className="space-y-2 pt-6 sm:space-y-3">
+          <ul className="mt-4 space-y-2 sm:mt-6 sm:space-y-3">
             {supportLinks.map((link, index) => (
               <li key={index}>
                 <Link
@@ -77,10 +77,10 @@ export function Footer() {
             ))}
           </ul>
         </div>
-        <div className="col-span-2 space-y-6">
+        <div className="col-span-2">
           <h4 className="headline-4">Stay up to date</h4>
 
-          <div className="flex max-w-96 rounded-lg bg-white/10 p-2">
+          <div className="mt-4 flex max-w-96 rounded-lg bg-white/10 p-2 sm:mt-6">
             <input
               type="email"
               placeholder="Your email address"

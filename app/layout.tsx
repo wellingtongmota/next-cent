@@ -1,11 +1,11 @@
+import { Footer } from "@/components/footer"
+import { Navbar } from "@/components/navbar"
 import { ThemeProvider } from "@/components/theme-provider"
 import { inter } from "@/fonts"
 import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
 import { PropsWithChildren } from "react"
 import "./globals.css"
-import Navbar from "@/components/navbar"
-import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Nextcent",
@@ -27,8 +27,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Navbar /> */}
-          <header>nav</header>
+          <Navbar />
+          {/* <header>nav</header> */}
           <main>{children}</main>
           <Footer />
         </ThemeProvider>
