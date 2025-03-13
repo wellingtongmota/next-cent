@@ -26,7 +26,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
+          {/* <Navbar /> */}
+          <header>nav</header>
           <main>{children}</main>
           <footer className="border-t">Footer</footer>
         </ThemeProvider>
