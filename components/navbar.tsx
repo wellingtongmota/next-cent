@@ -6,7 +6,7 @@ const navLinks = ["Home", "Service", "Feature", "Product", "Testimonial", "FAQ"]
 
 export default function Navbar() {
   return (
-    <header className="wrapper bg-accent flex h-20 items-center gap-2">
+    <header className="wrapper bg-accent sticky top-0 z-10 flex h-20 items-center gap-2">
       <div className="flex flex-1 items-center gap-2">
         <LogoIcon />
         <h1 className="headline-3 text-secondary">Nextcent</h1>

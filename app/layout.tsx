@@ -28,7 +28,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         >
           <Navbar />
           <main>{children}</main>
-          <footer>Footer</footer>
+          <footer className="border-t">Footer</footer>
         </ThemeProvider>
       </body>
     </html>
