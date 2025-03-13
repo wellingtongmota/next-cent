@@ -5,6 +5,7 @@ import type { Metadata } from "next"
 import { PropsWithChildren } from "react"
 import "./globals.css"
 import Navbar from "@/components/navbar"
+import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Nextcent",
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
           {/* <Navbar /> */}
           <header>nav</header>
           <main>{children}</main>
-          <footer className="border-t">Footer</footer>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
